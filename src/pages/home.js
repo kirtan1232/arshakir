@@ -1,4 +1,7 @@
 import React from 'react';
+import PortfolioSection from './portfoliotracking';
+import PaymentSection from './payment';
+import FeatureSection from './feature';
 
 const HomePage = () => {
   return (
@@ -11,28 +14,28 @@ const HomePage = () => {
         
         <div className="hidden md:flex flex-1 justify-center">
           <ul className="flex space-x-10">
-            <li className="flex items-center text-gray-700 hover:text-gray-900 cursor-pointer font-medium">
+            <li className="flex items-center text-gray-700 hover:text-gray-900 cursor-pointer font-bold">
               Product 
               <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
             </li>
-            <li className="flex items-center text-gray-700 hover:text-gray-900 cursor-pointer font-medium">
+            <li className="flex items-center text-gray-700 hover:text-gray-900 cursor-pointer font-bold">
               Template
               <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
             </li>
-            <li className="text-gray-700 hover:text-gray-900 cursor-pointer font-medium">Blog</li>
-            <li className="text-gray-700 hover:text-gray-900 cursor-pointer font-medium">Pricing</li>
+            <li className="text-gray-700 hover:text-gray-900 cursor-pointer font-bold">Blog</li>
+            <li className="text-gray-700 hover:text-gray-900 cursor-pointer font-bold">Pricing</li>
           </ul>
         </div>
         
         <div className="flex items-center space-x-4">
-          <button className="text-gray-700 hover:text-gray-900 font-medium px-4 py-2">
+          <button className="text-gray-700 hover:text-gray-900 font-bold px-4 py-2">
             Sign In
           </button>
-          <button className="bg-blue-800 hover:bg-blue-900 text-white font-medium px-8 py-4 rounded-lg transition-colors">
+          <button className="bg-blue-800 hover:bg-blue-900 text-white font-bold px-8 py-4 rounded-lg transition-colors">
             Start Free
           </button>
         </div>
@@ -115,10 +118,10 @@ const HomePage = () => {
       </section>
 
       {/* Companies Section - Now Responsive */}
-      <section className="bg-gray-50 py-16 px-6 md:px-12">
+      <section className="bg-gray-100 py-16 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-lg md:text-xl text-gray-600 font-medium">
+            <p className="text-lg md:text-xl text-gray-800 font-medium">
               Over 32k+ software businesses growing with AR Shakir.
             </p>
           </div>
@@ -197,8 +200,16 @@ const HomePage = () => {
               <img src="images/protonet.png" alt="Protonet" className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
             </div>
           </div>
+          
         </div>
       </section>
+      {/* Portfolio Section */}
+      <PortfolioSection />
+      {/* Payment Section */}
+      <PaymentSection />
+      {/* Feature Section */}
+      <FeatureSection />
+      
     </div>
   );
 };
