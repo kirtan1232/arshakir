@@ -4,6 +4,9 @@ import PaymentSection from './payment';
 import FeatureSection from './feature';
 import TestimonialsSection from './testimonials';
 import Footer from '@/componenets/footer';
+import GetStarted from './getstarted';
+import FaqPage from './faq';
+
 
 const HomePage = () => {
   return (
@@ -213,7 +216,11 @@ const HomePage = () => {
       <FeatureSection />
       {/* Testimonials Section */}
       <TestimonialsSection />
-
+      {/* Get Started Section */}
+      <GetStarted />
+      {/* FAQ Section */}
+      <FaqPage />
+    
       {/* --------------------------------------------------------------------*/}
       {/* Footer */}
       <Footer />
