@@ -3,6 +3,7 @@ import PortfolioSection from './portfoliotracking';
 import PaymentSection from './payment';
 import FeatureSection from './feature';
 import TestimonialsSection from './testimonials';
+import Footer from '@/componenets/footer';
 
 const HomePage = () => {
   return (
@@ -212,6 +213,10 @@ const HomePage = () => {
       <FeatureSection />
       {/* Testimonials Section */}
       <TestimonialsSection />
+
+      {/* --------------------------------------------------------------------*/}
+      {/* Footer */}
+      <Footer />
       
     </div>
   );
