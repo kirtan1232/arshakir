@@ -2,6 +2,7 @@ import React from 'react';
 import PortfolioSection from './portfoliotracking';
 import PaymentSection from './payment';
 import FeatureSection from './feature';
+import TestimonialsSection from './testimonials';
 
 const HomePage = () => {
   return (
@@ -209,6 +210,8 @@ const HomePage = () => {
       <PaymentSection />
       {/* Feature Section */}
       <FeatureSection />
+      {/* Testimonials Section */}
+      <TestimonialsSection />
       
     </div>
   );
