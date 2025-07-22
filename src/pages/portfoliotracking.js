@@ -21,7 +21,7 @@ const PortfolioSection = () => {
             <div className="flex items-start mb-2">
               <span className="text-3xl font-bold text-gray-900 mr-2">“</span>
               <span className="text-gray-700">
-                Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The expense windows adapted sir. Wrong widen.
+                Wise busy past both park when an ye no. Nay likely her length sooner thrown  lively income. The expense windows adapted sir. Wrong widen.
               </span>
             </div>
             <p className="text-gray-500 mt-2 text-sm">

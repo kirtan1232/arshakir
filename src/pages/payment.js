@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const PaymentSection = () => {
   return (
@@ -7,9 +8,11 @@ const PaymentSection = () => {
 
         {/* LEFT TOP - Full size image, no frame, shows all details */}
         <div className="flex flex-col justify-center items-center">
-          <img
-            src="images/payment1.png"
+          <Image
+            src="/images/payment1.png"
             alt="Payment 1"
+            width={600}
+            height={600}
             className="w-full h-full object-contain"
             style={{ display: 'block', maxHeight: '100vh' }}
           />
@@ -62,9 +65,11 @@ const PaymentSection = () => {
 
         {/* RIGHT BOTTOM - Full size image, no frame, shows all details */}
         <div className="flex flex-col items-end justify-end mt-0">
-          <img
-            src="images/payment2.png"
+          <Image
+            src="/images/payment2.png"
             alt="Payment 2"
+            width={600}
+            height={600}
             className="w-full h-full object-contain"
             style={{ display: 'block', maxHeight: '100vh' }}
           />
