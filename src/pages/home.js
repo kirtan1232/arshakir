@@ -5,6 +5,7 @@ import FeatureSection from './feature';
 import TestimonialsSection from './testimonials';
 import Footer from '@/componenets/footer';
 import GetStarted from './getstarted';
+import Blogs from './blogs';
 import FaqPage from './faq';
 
 
@@ -218,6 +219,8 @@ const HomePage = () => {
       <TestimonialsSection />
       {/* Get Started Section */}
       <GetStarted />
+      {/* Blogs Section */}
+      <Blogs />
       {/* FAQ Section */}
       <FaqPage />
     
