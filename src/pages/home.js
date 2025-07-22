@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import PortfolioSection from './portfoliotracking';
 import PaymentSection from './payment';
 import FeatureSection from './feature';
@@ -101,10 +102,12 @@ const HomePage = () => {
             <div className="flex-1 relative">
               <div className="relative h-[600px] md:h-[700px] flex items-start mt-1 justify-center">
                 {/* Main Image */}
-                <img
-                  src="images/bankingsolution.png"
+                <Image
+                  src="/images/bankingsolution.png"
                   alt="Banking Solution"
-                  className="w-full h-full object-contain rounded-3xl"
+                  width={600}
+                  height={700}
+                  className=" object-contain rounded-3xl"
                 />
               </div>
             </div>
@@ -133,77 +136,167 @@ const HomePage = () => {
           </div>
           
           {/* Mobile: Grid Layout (2x4) */}
-          <div className="grid grid-cols-2 gap-8 md:hidden">
-            <div className="flex justify-center items-center">
-              <img src="images/zeppelin.png" alt="OpenZeppelin" className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center">
-              <img src="images/oracle.png" alt="Oracle" className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center">
-              <img src="images/morpheus.png" alt="Morpheus" className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center">
-              <img src="images/samsung.png" alt="Samsung" className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center">
-              <img src="images/mondaycom.png" alt="Monday.com" className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center">
-              <img src="images/segment.png" alt="Segment" className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center col-span-2">
-              <img src="images/protonet.png" alt="Protonet" className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-          </div>
+      <div className="grid grid-cols-2 gap-8 md:hidden">
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/zeppelin.png"
+            alt="OpenZeppelin"
+            width={120}
+            height={144}
+            className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/oracle.png"
+            alt="Oracle"
+            width={120}
+            height={144}
+            className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/morpheus.png"
+            alt="Morpheus"
+            width={120}
+            height={144}
+            className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/samsung.png"
+            alt="Samsung"
+            width={120}
+            height={144}
+            className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/mondaycom.png"
+            alt="Monday.com"
+            width={120}
+            height={144}
+            className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/segment.png"
+            alt="Segment"
+            width={120}
+            height={144}
+            className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center col-span-2">
+          <Image
+            src="/images/protonet.png"
+            alt="Protonet"
+            width={120}
+            height={144}
+            className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+      </div>
 
-          {/* Tablet: Grid Layout (3x3) */}
-          <div className="hidden md:grid lg:hidden grid-cols-3 gap-8 xl:gap-12">
-            <div className="flex justify-center items-center">
-              <img src="images/zeppelin.png" alt="OpenZeppelin" className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center">
-              <img src="images/oracle.png" alt="Oracle" className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center">
-              <img src="images/morpheus.png" alt="Morpheus" className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center">
-              <img src="images/samsung.png" alt="Samsung" className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center">
-              <img src="images/mondaycom.png" alt="Monday.com" className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center">
-              <img src="images/segment.png" alt="Segment" className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="flex justify-center items-center col-span-3">
-              <img src="images/protonet.png" alt="Protonet" className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
-            </div>
-          </div>
+      {/* Tablet: Grid Layout (3x3) */}
+      <div className="hidden md:grid lg:hidden grid-cols-3 gap-8 xl:gap-12">
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/zeppelin.png"
+            alt="OpenZeppelin"
+            width={160}
+            height={192}
+            className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/oracle.png"
+            alt="Oracle"
+            width={160}
+            height={192}
+            className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/morpheus.png"
+            alt="Morpheus"
+            width={160}
+            height={192}
+            className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/samsung.png"
+            alt="Samsung"
+            width={160}
+            height={192}
+            className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/mondaycom.png"
+            alt="Monday.com"
+            width={160}
+            height={192}
+            className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/images/segment.png"
+            alt="Segment"
+            width={160}
+            height={192}
+            className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+        <div className="flex justify-center items-center col-span-3">
+          <Image
+            src="/images/protonet.png"
+            alt="Protonet"
+            width={160}
+            height={192}
+            className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+          />
+        </div>
+      </div>
 
           {/* Desktop: Single Row Layout */}
           <div className="hidden lg:flex justify-between items-center gap-8 xl:gap-12">
             <div className="flex-1 flex justify-center items-center">
-              <img src="images/zeppelin.png" alt="OpenZeppelin" className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+            <Image
+                  src="/images/zeppelin.png"
+                  alt="Zeppelin"
+                  width={240}
+                  height={288}
+                  className="w-full h-full object-cover  opacity-70 hover:opacity-100"
+                />
             </div>
             <div className="flex-1 flex justify-center items-center">
-              <img src="images/oracle.png" alt="Oracle" className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+              <Image src="/images/oracle.png" alt="Oracle" width={240} height={288} className=" object-contain opacity-70 hover:opacity-100 transition-opacity" />
             </div>
             <div className="flex-1 flex justify-center items-center">
-              <img src="images/morpheus.png" alt="Morpheus" className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+              <Image src="/images/morpheus.png" alt="Morpheus" width={240} height={288} className="object-contain opacity-70 hover:opacity-100 transition-opacity" />
             </div>
             <div className="flex-1 flex justify-center items-center">
-              <img src="images/samsung.png" alt="Samsung" className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+              <Image src="/images/samsung.png" alt="Samsung" width={240} height={288} className="object-contain opacity-70 hover:opacity-100 transition-opacity" />
             </div>
             <div className="flex-1 flex justify-center items-center">
-              <img src="images/mondaycom.png" alt="Monday.com" className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+              <Image src="/images/mondaycom.png" alt="Monday.com" width={240} height={288} className="object-contain opacity-70 hover:opacity-100 transition-opacity" />
             </div>
             <div className="flex-1 flex justify-center items-center">
-              <img src="images/segment.png" alt="Segment" className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+              <Image src="/images/segment.png" alt="Segment" width={240} height={288} className=" object-contain opacity-70 hover:opacity-100 transition-opacity" />
             </div>
             <div className="flex-1 flex justify-center items-center">
-              <img src="images/protonet.png" alt="Protonet" className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" />
+              <Image src="/images/protonet.png" alt="Protonet" width={240} height={288} className=" object-contain opacity-70 hover:opacity-100 transition-opacity" />
             </div>
           </div>
           
