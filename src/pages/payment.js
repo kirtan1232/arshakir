@@ -55,7 +55,7 @@ const PaymentSection = () => {
           {/* Testimonial */}
           <div className="bg-gray-200 rounded-xl px-6 py-4 max-w-md mb-8">
             <div className="text-gray-700 text-base">
-              Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The expense windows.
+              Wise busy past both park when an ye no. Nay likely her length sooner thrown  lively income. The expense windows.
             </div>
             <p className="text-gray-500 mt-2 text-sm">
               - Mike Taylor, Web Designer

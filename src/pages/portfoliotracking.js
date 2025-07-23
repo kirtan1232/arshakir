@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const PortfolioSection = () => {
   return (
@@ -36,8 +37,14 @@ const PortfolioSection = () => {
           <div className="bg-white rounded-xl border border-gray-200 p-8 text-center">
             <div className="text-left text-gray-500 font-semibold text-lg mb-4">01</div>
             <div className="flex justify-center mb-4">
-              <div className="w-12 h-4 bg-blue-700 rounded-t"></div>
-              <div className="w-12 h-2 bg-black rounded-b -mt-1"></div>
+              <Image
+                src="/images/blue.png"
+                alt="Connect wallets & companies"
+                width={50}
+                height={45}
+                className="mx-auto"
+                priority
+              />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-3">Connect wallets & companies</h3>
             <p className="text-gray-600 text-base">
@@ -48,8 +55,14 @@ const PortfolioSection = () => {
           <div className="bg-white rounded-xl border border-gray-200 p-8 text-center">
             <div className="text-left text-gray-500 font-semibold text-lg mb-4">02</div>
             <div className="flex justify-center mb-4">
-              <div className="w-12 h-4 bg-orange-400 rounded-t"></div>
-              <div className="w-12 h-2 bg-black rounded-b -mt-1"></div>
+              <Image
+                src="/images/orange.png"
+                alt="Review transactions"
+                width={50}
+                height={45}
+                className="mx-auto"
+                priority
+              />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-3">Review transactions</h3>
             <p className="text-gray-600 text-base">
@@ -60,8 +73,14 @@ const PortfolioSection = () => {
           <div className="bg-white rounded-xl border border-gray-200 p-8 text-center">
             <div className="text-left text-gray-500 font-semibold text-lg mb-4">03</div>
             <div className="flex justify-center mb-4">
-              <div className="w-12 h-4 bg-yellow-400 rounded-t"></div>
-              <div className="w-12 h-2 bg-black rounded-b -mt-1"></div>
+              <Image
+                src="/images/yellow.png"
+                alt="Get income insights"
+                width={50}
+                height={45}
+                className="mx-auto"
+                priority
+              />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-3">Get income insights</h3>
             <p className="text-gray-600 text-base">

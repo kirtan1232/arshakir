@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const FeatureSection = () => {
   return (
@@ -20,8 +21,14 @@ const FeatureSection = () => {
           <div className="flex flex-col md:flex-row gap-8 flex-[2]">
             <div className="bg-white rounded-xl border border-gray-200 p-8 w-full md:w-[350px]">
               <div className="flex items-center mb-6">
-                <div className="w-10 h-3 bg-orange-400 rounded-t mr-2"></div>
-                <div className="w-10 h-2 bg-black rounded-b -mt-1"></div>
+                <Image
+                  src="/images/orange.png"
+                  alt="Feature Icon 1"
+                  width={40}
+                  height={24}
+                  className="mr-2"
+                  priority
+                />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">
                 Really boy law county she unable her sister
@@ -32,8 +39,14 @@ const FeatureSection = () => {
             </div>
             <div className="bg-white rounded-xl border border-gray-200 p-8 w-full md:w-[350px]">
               <div className="flex items-center mb-6">
-                <div className="w-10 h-3 bg-blue-700 rounded-t mr-2"></div>
-                <div className="w-10 h-2 bg-black rounded-b -mt-1"></div>
+                <Image
+                  src="/images/blue.png"
+                  alt="Feature Icon 2"
+                  width={40}
+                  height={24}
+                  className="mr-2"
+                  priority
+                />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">
                 Among sex are leave law built now
