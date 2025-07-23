@@ -55,7 +55,7 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-900 text-base font-medium">
               <li><a href="#">Proposal Template</a></li>
               <li><a href="#">Invoice Template</a></li>
-              <li><a href="#">Tuturoial</a></li>
+              <li><a href="#">Tutorial</a></li>
               <li><a href="#">How to write a contract</a></li>
             </ul>
           </div>
