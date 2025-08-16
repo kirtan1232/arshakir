@@ -1,13 +1,14 @@
-import React from 'react';
-import Image from 'next/image';
-import PortfolioSection from './portfoliotracking';
-import PaymentSection from './payment';
-import FeatureSection from './feature';
-import TestimonialsSection from './testimonials';
+"use client";
+
 import Footer from '@/componenets/footer';
-import GetStarted from './getstarted';
+import Image from 'next/image';
 import Blogs from './blogs';
 import FaqPage from './faq';
+import FeatureSection from './feature';
+import GetStarted from './getstarted';
+import PaymentSection from './payment';
+import PortfolioSection from './portfoliotracking';
+import TestimonialsSection from './testimonials';
 
 
 const HomePage = () => {
